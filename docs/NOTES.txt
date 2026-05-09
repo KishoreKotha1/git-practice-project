@@ -59,3 +59,5 @@ PROGRESS TRACKER:
 [ ] Created a Pull Request
 
 Keep going! You're doing great 🚀
+Made some changes in notes.txt 
+
