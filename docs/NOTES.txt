@@ -61,3 +61,4 @@ PROGRESS TRACKER:
 Keep going! You're doing great 🚀
 Made some changes in notes.txt 
 Second changes happend looking forward
+Last changes before going to branches 
