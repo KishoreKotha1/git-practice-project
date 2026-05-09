@@ -41,4 +41,4 @@ v1.0.0 — Initial Release
 ## 📝 Notes
 
 This project is for learning Git. Feel free to modify any file and practice committing changes!
-first changes happend just niow 
+first changes happend just niow.
