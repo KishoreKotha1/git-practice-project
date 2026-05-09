@@ -1,0 +1,157 @@
+====================================
+   GIT COMMANDS QUICK REFERENCE
+====================================
+Use this file while practicing Git!
+====================================
+
+
+--- STEP 1: SETUP (Do this once) ---
+
+git config --global user.name "Your Name"
+    → Sets your name for all commits
+
+git config --global user.email "you@email.com"
+    → Sets your email for all commits
+
+git config --list
+    → Shows your current config settings
+
+
+--- STEP 2: START A PROJECT ---
+
+git init
+    → Starts tracking the current folder with Git
+    → Creates a hidden .git folder
+
+git clone <url>
+    → Downloads a repo from GitHub to your computer
+    → Example: git clone https://github.com/user/repo.git
+
+
+--- STEP 3: CHECK STATUS ---
+
+git status
+    → Shows which files are changed, staged, or untracked
+    → USE THIS ALL THE TIME — it tells you what to do next
+
+git log
+    → Shows full history of commits
+
+git log --oneline
+    → Shows short commit history (easier to read)
+
+git diff
+    → Shows exactly what lines changed in files
+
+
+--- STEP 4: SAVE CHANGES (The main loop) ---
+
+git add .
+    → Stages ALL changed files (ready to commit)
+
+git add <filename>
+    → Stages ONE specific file
+    → Example: git add index.html
+
+git commit -m "your message here"
+    → Saves the staged files with a message
+    → Example: git commit -m "Add homepage layout"
+
+⭐ GOOD COMMIT MESSAGES:
+    ✅ "Add calculator feature"
+    ✅ "Fix bug in login form"
+    ✅ "Update README with instructions"
+    ❌ "stuff"
+    ❌ "changes"
+    ❌ "aaa"
+
+
+--- STEP 5: BRANCHES ---
+
+git branch
+    → Lists all branches (* marks current branch)
+
+git branch feature-login
+    → Creates a new branch called "feature-login"
+
+git checkout feature-login
+    → Switches to the "feature-login" branch
+
+git checkout -b feature-signup
+    → Creates AND switches to new branch (shortcut!)
+
+git merge feature-login
+    → Merges "feature-login" into your current branch
+
+git branch -d feature-login
+    → Deletes the branch (safe — only if already merged)
+
+
+--- STEP 6: CONNECT TO GITHUB ---
+
+git remote add origin https://github.com/username/repo.git
+    → Links your local project to GitHub
+
+git remote -v
+    → Shows which GitHub repo you are connected to
+
+git push origin main
+    → Uploads (pushes) your commits to GitHub
+    → First time: git push -u origin main
+
+git pull origin main
+    → Downloads (pulls) latest changes from GitHub
+
+git fetch
+    → Checks if there are new changes (doesn't apply them)
+
+
+--- STEP 7: UNDO MISTAKES ---
+
+git restore <filename>
+    → Discards changes in a file (goes back to last commit)
+    → Example: git restore index.html
+
+git reset HEAD <filename>
+    → Unstages a file (removes from staging area)
+
+git revert <commit-id>
+    → Creates a new commit that undoes a past commit (SAFE)
+    → Example: git revert a1b2c3d
+
+git reset --hard HEAD~1
+    → ⚠️ WARNING: Deletes last commit completely (DANGEROUS)
+
+
+====================================
+   THE DAILY GIT WORKFLOW
+====================================
+
+Every time you work on a project:
+
+1.  git status              ← See what changed
+2.  git add .               ← Stage your changes
+3.  git commit -m "..."     ← Save with message
+4.  git push origin main    ← Upload to GitHub
+
+That's it! Do this every time you finish a feature.
+
+====================================
+   COMMON MISTAKES & FIXES
+====================================
+
+Problem: "I committed to wrong branch"
+Fix:     git checkout correct-branch
+         git cherry-pick <commit-id>
+
+Problem: "I forgot to add a file to last commit"
+Fix:     git add forgotten-file.txt
+         git commit --amend
+
+Problem: "My push was rejected"
+Fix:     git pull origin main    (get latest first)
+         Then: git push origin main
+
+Problem: "I want to see old version of a file"
+Fix:     git log --oneline       (find commit id)
+         git checkout <id> -- filename.txt

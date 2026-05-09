@@ -1,0 +1,38 @@
+{
+  "project": "Git Practice Project",
+  "version": "1.0.0",
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice Johnson",
+      "role": "Developer",
+      "email": "alice@example.com",
+      "skills": ["JavaScript", "React", "Node.js"],
+      "active": true
+    },
+    {
+      "id": 2,
+      "name": "Bob Smith",
+      "role": "Designer",
+      "email": "bob@example.com",
+      "skills": ["Figma", "CSS", "Photoshop"],
+      "active": true
+    },
+    {
+      "id": 3,
+      "name": "Charlie Brown",
+      "role": "Manager",
+      "email": "charlie@example.com",
+      "skills": ["Planning", "Scrum", "Leadership"],
+      "active": false
+    },
+    {
+      "id": 4,
+      "name": "Diana Prince",
+      "role": "Tester",
+      "email": "diana@example.com",
+      "skills": ["Selenium", "Jest", "Manual Testing"],
+      "active": true
+    }
+  ]
+}

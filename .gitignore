@@ -1,0 +1,29 @@
+# .gitignore — Files Git should NOT track
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+*.sublime-project
+
+# Logs
+*.log
+logs/
+
+# Dependencies (if using Node.js later)
+node_modules/
+
+# Environment variables (SECRET — never commit these!)
+.env
+.env.local
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp

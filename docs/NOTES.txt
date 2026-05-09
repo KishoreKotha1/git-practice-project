@@ -1,0 +1,61 @@
+============================
+  MY GIT LEARNING NOTES
+============================
+
+Date Started: May 2026
+Goal: Learn Git from scratch using this project
+
+----------------------------
+THINGS I LEARNED TODAY:
+----------------------------
+
+[ ] What is Git?
+    - Git is a version control system
+    - It tracks changes to your files
+    - You can go back to any older version
+    - It helps teams work together on same project
+
+[ ] What is GitHub?
+    - GitHub is a website to store your Git projects online
+    - It is like Google Drive but for code
+    - Other people can see and contribute to your project
+
+[ ] Difference between Git and GitHub:
+    - Git = tool on your computer
+    - GitHub = website on the internet
+    - You use Git locally, then push to GitHub
+
+----------------------------
+IMPORTANT TERMS:
+----------------------------
+
+Repository (repo) = A folder tracked by Git
+Commit           = A saved snapshot of your changes
+Branch           = A separate line of development
+Merge            = Combining two branches together
+Push             = Uploading your code to GitHub
+Pull             = Downloading latest code from GitHub
+Clone            = Copying a repo from GitHub to your PC
+Stage            = Preparing files before committing
+
+----------------------------
+MY QUESTIONS TO EXPLORE:
+----------------------------
+
+1. What happens if two people edit same file?   --> called a "merge conflict"
+2. How do I undo a bad commit?                  --> use git revert or git reset
+3. What is a pull request?                      --> a request to merge your branch into main
+
+----------------------------
+PROGRESS TRACKER:
+----------------------------
+
+[✅] Created project files
+[ ] Initialized git repo (git init)
+[ ] Made first commit
+[ ] Created a branch
+[ ] Merged a branch
+[ ] Pushed to GitHub
+[ ] Created a Pull Request
+
+Keep going! You're doing great 🚀
